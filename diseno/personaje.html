@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Personaje</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header class="barra">
+    <a class="barra__logo" href="lobby.html">Minijuegos</a>
+    <p class="barra__aura"><span data-dato="aura">1.000</span> de aura</p>
+    <span class="barra__inicial">J</span>
+  </header>
+  <nav class="menu">
+    <a class="menu__enlace" href="lobby.html">Lobby</a>
+    <a class="menu__enlace" href="tienda.html">Tienda</a>
+    <a class="menu__enlace menu__enlace--activo" href="personaje.html">Personaje</a>
+    <a class="menu__enlace" href="configuracion.html">Configuración</a>
+  </nav>
+
+  <main class="contenido">
+    <h1 class="titulo">Mi personaje</h1>
+
+    <section class="personaje">
+      <div class="personaje__cabeza"></div>
+      <div class="personaje__cuerpo"></div>
+      <p class="personaje__nombre" data-dato="apodo">Jugador1</p>
+    </section>
+
+    <section>
+      <h2 class="subtitulo">Artículos comprados</h2>
+      <article class="tarjeta">
+        <h3 class="tarjeta__titulo" data-dato="articulo">Gorra azul</h3>
+        <p class="tarjeta__texto">Cabeza</p>
+        <button class="boton boton--equipar" type="button">Equipar</button>
+      </article>
+      <article class="tarjeta">
+        <h3 class="tarjeta__titulo" data-dato="articulo">Zapatillas</h3>
+        <p class="tarjeta__texto">Calzado</p>
+        <button class="boton boton--equipar" type="button">Equipar</button>
+      </article>
+    </section>
+  </main>
+</body>
+</html>

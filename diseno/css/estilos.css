@@ -1,0 +1,208 @@
+:root {
+  --fondo: #1e1b3a;
+  --tarjeta: #2f2a5a;
+  --principal: #7c5cff;
+  --aura: #ffd43b;
+  --texto: #ffffff;
+  --peligro: #ff5d5d;
+  --fuente: "Poppins", Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(#1e1b3a, #3a2f6e);
+  color: var(--texto);
+  font-family: var(--fuente);
+}
+
+/* barra */
+.barra {
+  background-color: #14122b;
+  padding: 10px;
+  text-align: center;
+}
+
+.barra__logo {
+  color: var(--texto);
+  font-weight: 600;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.barra__aura {
+  color: var(--aura);
+  font-size: 22px;
+  font-weight: 600;
+  margin: 5px 0;
+}
+
+.barra__inicial {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  border-radius: 50%;
+  background-color: var(--principal);
+  text-align: center;
+}
+
+/* menu */
+.menu {
+  background-color: var(--tarjeta);
+  text-align: center;
+  padding: 10px;
+}
+
+.menu__enlace {
+  color: var(--texto);
+  text-decoration: none;
+  padding: 8px 12px;
+}
+
+.menu__enlace--activo {
+  background-color: var(--principal);
+  border-radius: 8px;
+}
+
+/* contenido */
+.contenido {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.titulo {
+  font-size: 28px;
+  text-align: center;
+}
+
+.subtitulo {
+  font-size: 20px;
+  color: var(--aura);
+}
+
+/* botones */
+.boton {
+  display: inline-block;
+  background-color: var(--principal);
+  color: var(--texto);
+  font-family: var(--fuente);
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.boton--bonus,
+.boton--comprar {
+  background-color: var(--aura);
+  color: #000000;
+}
+
+.boton--peligro {
+  background-color: var(--peligro);
+}
+
+/* tarjetas */
+.tarjeta {
+  background-color: var(--tarjeta);
+  border: 2px solid var(--principal);
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.tarjeta__titulo {
+  margin: 0 0 5px 0;
+}
+
+.tarjeta__texto {
+  margin: 0 0 10px 0;
+}
+
+.tarjeta__precio {
+  color: var(--aura);
+  font-weight: 600;
+}
+
+.tarjeta__estado {
+  font-style: italic;
+}
+
+.tarjeta--bloqueada {
+  opacity: 0.6;
+}
+
+/* formularios */
+.formulario {
+  margin: 20px 0;
+}
+
+.formulario__etiqueta {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.formulario__campo {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 2px solid var(--principal);
+  border-radius: 8px;
+  font-family: var(--fuente);
+  font-size: 16px;
+}
+
+.aviso {
+  background-color: var(--tarjeta);
+  border: 2px solid var(--aura);
+  border-radius: 10px;
+  padding: 10px;
+  color: var(--aura);
+  text-align: center;
+}
+
+/* personaje hecho con css */
+.personaje {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.personaje__cabeza {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background: radial-gradient(#ffe0bd, #e0a370);
+}
+
+.personaje__cuerpo {
+  width: 100px;
+  height: 120px;
+  margin: 5px auto;
+  border-radius: 15px;
+  background: linear-gradient(#7c5cff, #4a30c4);
+}
+
+.personaje__nombre {
+  font-weight: 600;
+}
+
+/* bienvenida */
+.bienvenida {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.bienvenida__logo {
+  font-size: 40px;
+  color: var(--aura);
+}
+
+.bienvenida__frase {
+  font-size: 18px;
+  margin-bottom: 30px;
+}

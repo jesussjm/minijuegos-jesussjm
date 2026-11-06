@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lobby</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header class="barra">
+    <a class="barra__logo" href="lobby.html">Minijuegos</a>
+    <p class="barra__aura"><span data-dato="aura">1.000</span> de aura</p>
+    <span class="barra__inicial">J</span>
+  </header>
+  <nav class="menu">
+    <a class="menu__enlace menu__enlace--activo" href="lobby.html">Lobby</a>
+    <a class="menu__enlace" href="tienda.html">Tienda</a>
+    <a class="menu__enlace" href="personaje.html">Personaje</a>
+    <a class="menu__enlace" href="configuracion.html">Configuración</a>
+  </nav>
+
+  <main class="contenido">
+    <h1 class="titulo">Lobby</h1>
+
+    <section class="personaje">
+      <div class="personaje__cabeza"></div>
+      <div class="personaje__cuerpo"></div>
+      <p class="personaje__nombre" data-dato="apodo">Jugador1</p>
+    </section>
+    <button class="boton boton--bonus" type="button">Bonus diario</button>
+
+    <section>
+      <h2 class="subtitulo">Minijuegos</h2>
+      <article class="tarjeta tarjeta--bloqueada">
+        <h3 class="tarjeta__titulo">Reflejos</h3>
+        <p class="tarjeta__texto">Pulsa lo más rápido que puedas</p>
+        <p class="tarjeta__estado">Próximamente</p>
+      </article>
+      <article class="tarjeta tarjeta--bloqueada">
+        <h3 class="tarjeta__titulo">Memoria</h3>
+        <p class="tarjeta__texto">Encuentra las parejas</p>
+        <p class="tarjeta__estado">Próximamente</p>
+      </article>
+      <article class="tarjeta tarjeta--bloqueada">
+        <h3 class="tarjeta__titulo">Mi minijuego</h3>
+        <p class="tarjeta__texto">Lo haré en la práctica 3</p>
+        <p class="tarjeta__estado">Próximamente</p>
+      </article>
+    </section>
+  </main>
+</body>
+</html>

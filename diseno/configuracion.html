@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Configuración</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header class="barra">
+    <a class="barra__logo" href="lobby.html">Minijuegos</a>
+    <p class="barra__aura"><span data-dato="aura">1.000</span> de aura</p>
+    <span class="barra__inicial">J</span>
+  </header>
+  <nav class="menu">
+    <a class="menu__enlace" href="lobby.html">Lobby</a>
+    <a class="menu__enlace" href="tienda.html">Tienda</a>
+    <a class="menu__enlace" href="personaje.html">Personaje</a>
+    <a class="menu__enlace menu__enlace--activo" href="configuracion.html">Configuración</a>
+  </nav>
+
+  <main class="contenido">
+    <h1 class="titulo">Configuración</h1>
+
+    <form class="formulario" action="configuracion.html" method="post">
+      <label class="formulario__etiqueta" for="apodo">Apodo</label>
+      <input class="formulario__campo" type="text" id="apodo" name="apodo" value="Jugador1">
+
+      <p class="formulario__etiqueta">Sonido</p>
+      <label><input type="radio" name="sonido" value="si" checked> Sí</label>
+      <label><input type="radio" name="sonido" value="no"> No</label>
+
+      <button class="boton" type="submit">Guardar</button>
+    </form>
+
+    <form class="formulario" action="index.html" method="post">
+      <button class="boton" type="submit" name="cerrar">Cerrar sesión</button>
+      <button class="boton boton--peligro" type="submit" name="borrar">Borrar cuenta</button>
+    </form>
+  </main>
+</body>
+</html>

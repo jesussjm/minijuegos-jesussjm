@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tienda</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header class="barra">
+    <a class="barra__logo" href="lobby.html">Minijuegos</a>
+    <p class="barra__aura"><span data-dato="aura">1.000</span> de aura</p>
+    <span class="barra__inicial">J</span>
+  </header>
+  <nav class="menu">
+    <a class="menu__enlace" href="lobby.html">Lobby</a>
+    <a class="menu__enlace menu__enlace--activo" href="tienda.html">Tienda</a>
+    <a class="menu__enlace" href="personaje.html">Personaje</a>
+    <a class="menu__enlace" href="configuracion.html">Configuración</a>
+  </nav>
+
+  <main class="contenido">
+    <h1 class="titulo">Tienda</h1>
+    <section>
+      <article class="tarjeta">
+        <h3 class="tarjeta__titulo" data-dato="articulo">Gorra azul</h3>
+        <p class="tarjeta__texto">Cabeza · nivel <span data-dato="nivel">1</span></p>
+        <p class="tarjeta__precio"><span data-dato="precio">150</span> de aura</p>
+        <button class="boton boton--comprar" type="button">Comprar</button>
+      </article>
+      <article class="tarjeta">
+        <h3 class="tarjeta__titulo" data-dato="articulo">Camiseta roja</h3>
+        <p class="tarjeta__texto">Cuerpo · nivel <span data-dato="nivel">1</span></p>
+        <p class="tarjeta__precio"><span data-dato="precio">200</span> de aura</p>
+        <button class="boton boton--comprar" type="button">Comprar</button>
+      </article>
+      <article class="tarjeta">
+        <h3 class="tarjeta__titulo" data-dato="articulo">Zapatillas</h3>
+        <p class="tarjeta__texto">Calzado · nivel <span data-dato="nivel">2</span></p>
+        <p class="tarjeta__precio"><span data-dato="precio">300</span> de aura</p>
+        <button class="boton boton--comprar" type="button">Comprar</button>
+      </article>
+      <article class="tarjeta">
+        <h3 class="tarjeta__titulo" data-dato="articulo">Gafas de sol</h3>
+        <p class="tarjeta__texto">Accesorio · nivel <span data-dato="nivel">3</span></p>
+        <p class="tarjeta__precio"><span data-dato="precio">450</span> de aura</p>
+        <button class="boton boton--comprar" type="button">Comprar</button>
+      </article>
+    </section>
+  </main>
+</body>
+</html>

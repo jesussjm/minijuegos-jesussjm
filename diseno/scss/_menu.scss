@@ -1,0 +1,37 @@
+@use 'variables' as *;
+
+.menu {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--color-superficie);
+  padding: 0.85rem;
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid var(--color-borde);
+  z-index: 100;
+
+  @media (min-width: $breakpoint-tablet) {
+    position: static;
+    border-top: none;
+    border-bottom: 1px solid var(--color-borde);
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  &__enlace {
+    color: var(--color-texto-secundario);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+
+    &:hover {
+      color: var(--color-principal);
+    }
+
+    &--activo {
+      color: var(--color-principal);
+    }
+  }
+}

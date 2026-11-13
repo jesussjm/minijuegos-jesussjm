@@ -1,0 +1,37 @@
+@use 'variables' as *;
+
+.tarjetas {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-top: 1rem;
+
+  @media (min-width: $breakpoint-tablet) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.tarjeta {
+  background-color: var(--color-superficie);
+  border-radius: $radio-borde;
+  padding: 1.5rem;
+  border: 1px solid var(--color-borde);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__titulo {
+    font-size: 1.15rem;
+    margin-bottom: 0.5rem;
+  }
+
+  &__precio {
+    margin: 0.75rem 0;
+    color: var(--color-aura);
+    font-weight: bold;
+  }
+
+  &--bloqueada {
+    opacity: 0.6;
+  }
+}

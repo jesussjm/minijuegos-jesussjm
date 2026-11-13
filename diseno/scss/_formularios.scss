@@ -1,0 +1,33 @@
+@use 'variables' as *;
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  max-width: 30rem;
+
+  &__grupo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    label {
+      font-weight: 600;
+    }
+
+    input,
+    select {
+      padding: 0.85rem;
+      border-radius: $radio-borde;
+      border: 1px solid var(--color-borde);
+      background-color: var(--color-fondo);
+      color: var(--color-texto);
+      font-size: 1rem;
+    }
+  }
+
+  &__info {
+    color: var(--color-texto-secundario);
+    font-size: 0.9rem;
+  }
+}

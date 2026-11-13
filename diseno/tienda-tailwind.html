@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda Tailwind - Minijuegos</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-slate-900 text-slate-50 min-h-screen flex flex-col pb-16 md:pb-0 font-sans">
+
+  <!-- Barra superior -->
+  <header class="flex justify-between items-center p-4 bg-slate-800 border-b border-slate-700">
+    <div class="font-bold text-xl">MiniJuegos</div>
+    <div class="flex items-center gap-4">
+      <p class="text-yellow-500 font-bold"><span data-dato="aura">1.000</span> de aura</p>
+      <div class="w-10 h-10 rounded-full bg-indigo-500 flex items-center justify-center font-bold" data-dato="iniciales">JD</div>
+    </div>
+  </header>
+
+  <!-- Menú ordenador (arriba en pantallas medianas/grandes) -->
+  <nav class="fixed bottom-0 left-0 right-0 md:static bg-slate-800 p-3 flex justify-around border-t md:border-t-0 md:border-b border-slate-700 z-10">
+    <a href="lobby.html" class="text-slate-400 hover:text-indigo-400 font-semibold">Lobby</a>
+    <a href="tienda.html" class="text-indigo-500 font-semibold">Tienda</a>
+    <a href="personaje.html" class="text-slate-400 hover:text-indigo-400 font-semibold">Personaje</a>
+    <a href="configuracion.html" class="text-slate-400 hover:text-indigo-400 font-semibold">Configuración</a>
+  </nav>
+
+  <!-- Contenido principal -->
+  <main class="flex-1 p-6 max-w-6xl mx-auto w-full">
+    <section>
+      <h2 class="text-2xl font-bold mb-6">Tienda de Mejoras (Versión Tailwind)</h2>
+      
+      <!-- Rejilla responsive: 1 col en móvil, 2 en tablet, 3 en escritorio -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        
+        <article class="bg-slate-800 rounded-lg p-6 border border-slate-700 flex flex-col justify-between">
+          <div>
+            <h3 class="text-lg font-bold mb-2">Casco de Vikingo</h3>
+            <p class="text-slate-300 text-sm">Categoría: Cabeza | Nivel 1</p>
+            <p class="my-3 text-yellow-500 font-bold">Precio: <span data-dato="precio-casco">250</span> aura</p>
+          </div>
+          <button class="w-full py-3 px-6 rounded-full font-bold bg-yellow-500 text-black hover:bg-yellow-400 cursor-pointer transition">Comprar</button>
+        </article>
+
+        <article class="bg-slate-800 rounded-lg p-6 border border-slate-700 flex flex-col justify-between">
+          <div>
+            <h3 class="text-lg font-bold mb-2">Armadura de Cuero</h3>
+            <p class="text-slate-300 text-sm">Categoría: Cuerpo | Nivel 1</p>
+            <p class="my-3 text-yellow-500 font-bold">Precio: <span data-dato="precio-armadura">500</span> aura</p>
+          </div>
+          <button class="w-full py-3 px-6 rounded-full font-bold bg-yellow-500 text-black hover:bg-yellow-400 cursor-pointer transition">Comprar</button>
+        </article>
+
+        <article class="bg-slate-800 rounded-lg p-6 border border-slate-700 flex flex-col justify-between">
+          <div>
+            <h3 class="text-lg font-bold mb-2">Botas Veloces</h3>
+            <p class="text-slate-300 text-sm">Categoría: Calzado | Nivel 2</p>
+            <p class="my-3 text-yellow-500 font-bold">Precio: <span data-dato="precio-botas">750</span> aura</p>
+          </div>
+          <button class="w-full py-3 px-6 rounded-full font-bold bg-yellow-500 text-black hover:bg-yellow-400 cursor-pointer transition">Comprar</button>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>

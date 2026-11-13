@@ -1,0 +1,56 @@
+@use 'variables';
+@use 'barra';
+@use 'menu';
+@use 'tarjetas';
+@use 'botones';
+@use 'formularios';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--fuente-principal);
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 4.5rem;
+
+  @media (min-width: variables.$breakpoint-tablet) {
+    padding-bottom: 0;
+  }
+}
+
+.main {
+  flex: 1;
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 75rem;
+  margin: 0 auto;
+
+  &--centrado {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.personaje-vista {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.personaje__figura {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--color-principal), var(--color-aura));
+}

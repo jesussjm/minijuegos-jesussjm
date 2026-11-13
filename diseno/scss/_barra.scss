@@ -1,0 +1,36 @@
+.barra {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--color-superficie);
+  border-bottom: 1px solid var(--color-borde);
+
+  &__logo {
+    font-weight: bold;
+    font-size: 1.25rem;
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  &__aura {
+    color: var(--color-aura);
+    font-weight: bold;
+  }
+
+  &__avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--color-principal);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+  }
+}

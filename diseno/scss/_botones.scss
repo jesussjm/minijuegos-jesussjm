@@ -1,0 +1,46 @@
+@use 'variables' as *;
+
+@mixin boton($fondo, $texto: #ffffff) {
+  padding: 0.85rem 1.5rem;
+  border-radius: $radio-pildora;
+  background-color: $fondo;
+  color: $texto;
+  font-weight: 700;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+
+  @media (min-width: $breakpoint-tablet) {
+    width: auto;
+  }
+}
+
+.boton {
+  &--principal {
+    @include boton(var(--color-principal));
+    &:hover {
+      background-color: var(--color-principal-hover);
+    }
+  }
+
+  &--secundario {
+    @include boton(var(--color-borde), var(--color-texto));
+  }
+
+  &--comprar {
+    @include boton(var(--color-aura), #000000);
+  }
+
+  &--peligro {
+    @include boton(var(--color-peligro));
+    margin-bottom: 0.5rem;
+  }
+
+  &--peligro-borde {
+    @include boton(transparent, var(--color-peligro));
+    border: 1px solid var(--color-peligro);
+  }
+}

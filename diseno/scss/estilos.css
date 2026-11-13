@@ -1,1 +1,304 @@
-/*# sourceMappingURL=estilos.css.map */
+:root {
+  --color-fondo: #0f172a;
+  --color-superficie: #1e293b;
+  --color-borde: #334155;
+  --color-texto: #f8fafc;
+  --color-texto-secundario: #94a3b8;
+  --color-principal: #6366f1;
+  --color-principal-hover: #4f46e5;
+  --color-aura: #eab308;
+  --color-peligro: #ef4444;
+  --fuente-principal: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --color-fondo: #f1f5f9;
+    --color-superficie: #ffffff;
+    --color-borde: #cbd5e1;
+    --color-texto: #0f172a;
+    --color-texto-secundario: #475569;
+    --color-principal: #4f46e5;
+    --color-principal-hover: #4338ca;
+    --color-aura: #ca8a04;
+    --color-peligro: #dc2626;
+  }
+}
+.barra {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--color-superficie);
+  border-bottom: 1px solid var(--color-borde);
+}
+.barra__logo {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+.barra__info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.barra__aura {
+  color: var(--color-aura);
+  font-weight: bold;
+}
+.barra__avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--color-principal);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.menu {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--color-superficie);
+  padding: 0.85rem;
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid var(--color-borde);
+  z-index: 100;
+}
+@media (min-width: 48rem) {
+  .menu {
+    position: static;
+    border-top: none;
+    border-bottom: 1px solid var(--color-borde);
+    justify-content: center;
+    gap: 3rem;
+  }
+}
+.menu__enlace {
+  color: var(--color-texto-secundario);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+.menu__enlace:hover {
+  color: var(--color-principal);
+}
+.menu__enlace--activo {
+  color: var(--color-principal);
+}
+
+.tarjetas {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+@media (min-width: 48rem) {
+  .tarjetas {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.tarjeta {
+  background-color: var(--color-superficie);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  border: 1px solid var(--color-borde);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.tarjeta__titulo {
+  font-size: 1.15rem;
+  margin-bottom: 0.5rem;
+}
+.tarjeta__precio {
+  margin: 0.75rem 0;
+  color: var(--color-aura);
+  font-weight: bold;
+}
+.tarjeta--bloqueada {
+  opacity: 0.6;
+}
+
+.boton--principal {
+  padding: 0.85rem 1.5rem;
+  border-radius: 999px;
+  background-color: var(--color-principal);
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+@media (min-width: 48rem) {
+  .boton--principal {
+    width: auto;
+  }
+}
+.boton--principal:hover {
+  background-color: var(--color-principal-hover);
+}
+.boton--secundario {
+  padding: 0.85rem 1.5rem;
+  border-radius: 999px;
+  background-color: var(--color-borde);
+  color: var(--color-texto);
+  font-weight: 700;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+@media (min-width: 48rem) {
+  .boton--secundario {
+    width: auto;
+  }
+}
+.boton--comprar {
+  padding: 0.85rem 1.5rem;
+  border-radius: 999px;
+  background-color: var(--color-aura);
+  color: #000000;
+  font-weight: 700;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+@media (min-width: 48rem) {
+  .boton--comprar {
+    width: auto;
+  }
+}
+.boton--peligro {
+  padding: 0.85rem 1.5rem;
+  border-radius: 999px;
+  background-color: var(--color-peligro);
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+@media (min-width: 48rem) {
+  .boton--peligro {
+    width: auto;
+  }
+}
+.boton--peligro {
+  margin-bottom: 0.5rem;
+}
+.boton--peligro-borde {
+  padding: 0.85rem 1.5rem;
+  border-radius: 999px;
+  background-color: transparent;
+  color: var(--color-peligro);
+  font-weight: 700;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+@media (min-width: 48rem) {
+  .boton--peligro-borde {
+    width: auto;
+  }
+}
+.boton--peligro-borde {
+  border: 1px solid var(--color-peligro);
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  max-width: 30rem;
+}
+.formulario__grupo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.formulario__grupo label {
+  font-weight: 600;
+}
+.formulario__grupo input,
+.formulario__grupo select {
+  padding: 0.85rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-borde);
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  font-size: 1rem;
+}
+.formulario__info {
+  color: var(--color-texto-secundario);
+  font-size: 0.9rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--fuente-principal);
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 4.5rem;
+}
+@media (min-width: 48rem) {
+  body {
+    padding-bottom: 0;
+  }
+}
+
+.main {
+  flex: 1;
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 75rem;
+  margin: 0 auto;
+}
+.main--centrado {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.personaje-vista {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.personaje__figura {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--color-principal), var(--color-aura));
+}/*# sourceMappingURL=estilos.css.map */
